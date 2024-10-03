@@ -1,7 +1,7 @@
 import axios from "axios";
 const URL_API = "";
 
-export async function getOneMeme(id) {
+export async function getFile(id) {
     try {
       const response = await axios.get(`${URL_API}/${id}`);
       return response.data;
@@ -10,10 +10,10 @@ export async function getOneMeme(id) {
     }
   };
 
-export async function createMeme(dataMeme) {
+export async function createFile(dataUser) {
 try {
     
-    const response = await axios.post(URL_API, dataMeme)
+    const response = await axios.post(URL_API, dataUser)
     .then((response) =>{
     console.log(response);
     });
@@ -22,9 +22,9 @@ try {
 }
 };
 
-export const updateMeme = async (id, dataMeme) => {
+export const updateFile = async (id, dataUser) => {
     try {
-      const response = await axios.put(`${URL_API}/${id}`, dataMeme);
+      const response = await axios.put(`${URL_API}/${id}`, dataUser);
       return response.data;
     } catch (error) {
       console.error(`Error updating user with id ${id}:`, error);
@@ -32,7 +32,7 @@ export const updateMeme = async (id, dataMeme) => {
     }
   };
 
-export async function deleteMeme(id) {
+export async function deleteFile(id) {
     try {
       const response = await axios.delete(`${URL_API}/${id}`);
       return response.data;

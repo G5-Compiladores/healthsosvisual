@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4 mt-auto">
+    <footer className="bg-gray-800 text-white py-4 mt-auto md:block hidden">
       <div className="container mx-auto text-center">
         <p>© 2024 HealthSOS. Todos los derechos reservados.</p>
         <div className="flex justify-center space-x-4 mt-2">
