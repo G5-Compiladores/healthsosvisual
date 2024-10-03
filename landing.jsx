@@ -30,7 +30,7 @@
 
     <!-- Sección Principal con Imagen Grande -->
     <section id="inicio" class="relative">
-        <img src="" alt="Imagen Principal" class="w-full h-auto">
+        <img src="aaas.png" alt="Imagen Principal" class="w-full h-auto">
         <div class="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white">
             <h1 class="text-4xl md:text-6xl font-bold">Bienvenido a HealthSOS</h1>
             <p class="mt-4 text-lg md:text-2xl"></p>
