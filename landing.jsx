@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="healthSOS" content="healthSOS">
     <title></title>
-    <!-- Tailwind CSS CDN -->
+   
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Font Awesome CDN para iconos -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -30,7 +30,7 @@
 
     <!-- Sección Principal con Imagen Grande -->
     <section id="inicio" class="relative">
-        <img src="https://via.placeholder.com/1920x600" alt="Imagen Principal" class="w-full h-auto">
+        <img src="" alt="Imagen Principal" class="w-full h-auto">
         <div class="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white">
             <h1 class="text-4xl md:text-6xl font-bold">Bienvenido a HealthSOS</h1>
             <p class="mt-4 text-lg md:text-2xl"></p>
