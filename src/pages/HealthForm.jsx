@@ -1,9 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { createFile } from '../services/services';
+import { Link, useNavigate } from 'react-router-dom';
 
 const HealthForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const navigate = useNavigate();
 
   const onSubmit = async (data) => {
     try {
@@ -16,8 +18,14 @@ const HealthForm = () => {
 
   return (
     <div>
-        <div className="mx-auto bg-white h-2 p-8 rounded-lg shadow-lg block md:hidden flex justify-center items-center">
-            <h2 className="text-2xl font-bold mb-6">Ficha de salud</h2>
+        <div className="mx-auto bg-white h-2 p-8 rounded-lg shadow-lg block md:hidden flex justify-between items-center">
+          <button 
+            className="ml-4 bg-blue-500 text-white p-2 rounded-lg flex items-center relative right-6"
+            onClick={() => navigate(-1)}
+          >
+            <i className="fas fa-arrow-left"></i>
+          </button>
+          <h2 className="text-2xl text-center font-bold relative right-[6.5rem]">Ficha de salud</h2>
         </div>
         <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md block md:hidden my-5">            
         <form onSubmit={handleSubmit(onSubmit)}>
