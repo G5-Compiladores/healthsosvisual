@@ -12,6 +12,9 @@ Acceso sin conexión a QR
 ### Tecnologias
 JS
 React
+axios
+vitest
+tailwindcss
 ### Instalación 🔧
 ## Despliegue 📦
 
